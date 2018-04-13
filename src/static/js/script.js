@@ -19,24 +19,29 @@
 /* ------------------- counter-number ------------------- */
 
 var signMinus = document.querySelector("[data-sign-minus]");
-var signPlus =  document.querySelector("[data-sign-plus]");
+var signPlus = document.querySelector("[data-sign-plus]");
 var signNumber = document.querySelector("[data-sign-value]");
 
+if (signNumber && signMinus && signPlus) {
 
-signNumber.oninput = function () {
-    this.value = this.value.replace(/\D/g, '');
-};
+    signNumber.oninput = function () {
+        this.value = this.value.replace(/\D/g, '');
+        countPrice();
+    };
 
+    signMinus.onclick = function () {
 
-signMinus.onclick = function () {
+        if (signNumber.value >= 2) {
+            var signValueCheange = --signNumber.value;
+            signNumber.setAttribute("value", signValueCheange);
+            countPrice();
+        }
+    };
 
-    if(signNumber.value >= 2) {
-        var signValueCheange = --signNumber.value;
-        signNumber.setAttribute("value", signValueCheange);
-    }
-};
-
-signPlus.onclick = function () {
+    signPlus.onclick = function () {
         var signValueCheange = ++signNumber.value;
         signNumber.setAttribute("value", signValueCheange);
-};
+        countPrice();
+    };
+
+}

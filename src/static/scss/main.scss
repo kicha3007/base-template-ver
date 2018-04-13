@@ -5,7 +5,7 @@
 
 /******************* sportmpro *******************/
 
-@import 'sportmpro/header';
+/*@import 'sportmpro/header';
 @import "sportmpro/nav";
 @import "sportmpro/breadcrumbs";
 @import "sportmpro/card";
@@ -20,7 +20,7 @@
 @import "sportmpro/base-card";
 @import "sportmpro/examples";
 @import "sportmpro/base-steps";
-@import "sportmpro/seo-text";
+@import "sportmpro/seo-text";*/
 
 
 /******************* vetklinika72 *******************/
@@ -28,6 +28,9 @@
 @import 'vetklinika72/header';
 @import "vetklinika72/nav";
 @import "vetklinika72/base-offer";
+@import "vetklinika72/service";
+@import "vetklinika72/symptoms";
+@import "vetklinika72/callback";
 
 
 
@@ -37,7 +40,7 @@
 
 
 .it-container {
-  max-width: 1060px;
+  max-width: 960px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -60,17 +63,16 @@
 
 .it-all-title {
   padding-top: 80px;
-  padding-bottom: 40px;
-  font-size: rem(20px);
+  padding-bottom: 60px;
+  font-size: rem(30px);
   line-height: 1.4;
-  text-align: center;
   font-weight: 700;
   position: relative;
-  color: #000000;
+  color: #333333;
   margin: 0;
   @include tablets {
     padding-top: 60px;
-    padding-bottom: 30px;
+    padding-bottom: 40px;
   }
   @include phones {
     font-size: rem(32px);
@@ -148,8 +150,8 @@
   text-align: center;
   user-select: none;
   border: none;
-  padding: 12px 5px;
-  font-size: 12px;
+  padding: 16.5px 5px;
+  font-size: 14px;
   transition: all 0.2s ease-in-out;
   background-color: $main-color;
   color: #ffffff;

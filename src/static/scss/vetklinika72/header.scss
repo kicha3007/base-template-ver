@@ -5,31 +5,152 @@
 /******************* it-header *******************/
 
 
-.box-map__desc {
-  position: absolute;
-}
-
-.it-header {
-  position: relative;
-}
-
 .it-header__wrap {
-  padding: 2% 0 5% 0;
   overflow: hidden;
 }
 
-.it-header__inner-wrap {
+.it-header__top {
+  padding: 2% 0 1% 0;
+  overflow: hidden;
   display: flex;
   flex-wrap: wrap;
-  margin: 0 -25px -20px;
+  align-items: center;
+  margin: 0 -20px -20px;
+}
+
+.it-header__column {
+  max-width: 210px;
+  width: 100%;
+  flex-basis: 150px;
+  flex-grow: 1;
+  margin: 0 20px 20px;
+}
+
+.it-header__column--2 {
+  max-width: 130px;
+}
+
+.it-header__column--3 {
+  max-width: 300px;
+}
+
+.it-header__column--4 {
+  max-width: 190px;
+}
+
+.it-header__bottom-wrap {
+  background-color: #72AB33;
+}
+
+.it-header__bottom {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -20px -20px;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.it-header__bottom__half {
+  margin: 0 20px 20px;
+  width: 100%;
+  flex-grow: 1;
+}
+
+.it-header__bottom__half--left {
+  max-width: 240px;
+
+}
+
+.it-header__bottom__half--right {
+  flex-grow: 1;
+  max-width: 650px;
+}
+
+.it-main-nav {
   overflow: hidden;
+}
+
+.it-location {
+  padding-left: 25px;
+  position: relative;
+
+}
+
+.it-location:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 23px;
+  top: -2px;
+  left: 0;
+  background: url("../img/vetklinika72/header/location.png") no-repeat  left center;
+}
+
+.it-location__text {
+  font-size: 12px;
+  color: #666666;
+}
+
+.it-social {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0 -10px -10px;
+
+  overflow: hidden;
+}
+
+.it-social__item {
+list-style-type: none;
+  padding-left: 0;
+  margin: 0 10px 10px;
+}
+
+.it-social__link {
+  border-radius: 50%;
+  background-color: #72AB33;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid $main-color;
+  transition: 0.2s;
+}
+
+.it-social__obgect {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.it-social__item:hover .it-social__link {
+  background-color: transparent;
+}
+
+.it-social__item:hover  .it-social__img {
+  fill: $main-color;
+
+}
+
+
+
+.it-social__img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+
 }
 
 
 .it-logo__img-box {
-  max-width: 150px;
+
   width: 100%;
-  max-height: 73px;
+  max-height: 65px;
   overflow: hidden;
 }
 
@@ -39,102 +160,11 @@
   display: block;
 }
 
-.it-header__column {
-  max-width: 150px;
-  width: 100%;
-  flex-basis: 150px;
-  align-items: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-grow: 1000;
-  margin: 0 25px 20px;
-  @include phones {
-    margin-bottom: 10px;
-  }
-
-}
-
-.it-header__column--1 {
-  @include phones {
-    max-width: 110px;
-
-  }
-}
 
 
-.it-header__column--2 {
-  max-width: 415px;
-  flex-basis: 180px;
-  flex-grow: 1000;
-  @include phones {
-    max-width: 122px;
-  }
 
-}
 
-.it-header__column--3 {
-  max-width: 280px;
-  flex-basis: 193px;
-  @include phones {
-    flex-basis: 133px;
-  }
 
-}
-
-.it-header__column--4 {
-  max-width: 195px;
-  flex-basis: 105px;
-}
-
-.it-header__column--5 {
-  max-width: 400px;
-  flex-basis: 300px;
-  flex-grow: 1;
-}
-
-.it-header__column--6 {
-  max-width: 330px;
-  flex-basis: 150px;
-  flex-grow: 1;
-}
-
-.it-location {
-  padding-left: 30px;
-  position: relative;
-
-}
-
-.it-location:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 16px;
-    height: 23px;
-    top: 7px;
-    left: 0;
-    background: url("../img/header/1.png") center center;
-}
-
-.it-location__text {
-  font-size: 14px;
-  color: #9FA3B0;
-  @include phones {
-    font-size: 12px;
-  }
-}
-
-.it-location__text--adress {
-  color: $main-color;
-}
-
-.it-desc {
-  font-weight: 300;
-  font-size: 14px;
-  color: #333333;
-  @include phones {
-    display: none;
-  }
-}
 
 .it-header__phone-wrap {
   display: flex;
@@ -142,16 +172,14 @@
 }
 
 .it-phone {
-  font-size: rem(24px);
+  font-size: rem(16px);
   color: #333333;
+  font-weight: 300;
   text-decoration: none;
   position: relative;
   padding-left: 35px;
   display: block;
   margin-bottom: 10px;
-  @include phones {
-    font-size: 12px;
-  }
 }
 
 .it-phone:hover {
@@ -167,19 +195,15 @@
 
 .it-phone__img-wrap {
   position: absolute;
-  top: 4px;
+  top: 0;
   left: 3px;
-  width: 21px;
-  height: 21px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
-  background-color: $main-color;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  @include phones {
-    top: -2px;
-  }
 }
 
 
@@ -228,64 +252,11 @@
   width: 100%;
 }
 
-.it-header__buttons .it-header__btn {
-    font-size: 14px;
-  @include phones {
-    font-size: 12px;
-    padding: 8px 2px;
-  }
+.it-header__btn b {
+  transition: 0.2s;
 }
 
-.it-search {
-  width: 100%;
-  max-width: 360px;
-  position: relative;
+.it-header__btn:hover b {
+  color: #ffffff;
 }
-
-.it-search__input {
-  border-radius: 5px;
-  padding: 10px 10px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-  width: 100%;
-  @include phones {
-    padding: 5px 5px;
-  }
-}
-
-.it-search__btn {
-  background-color: transparent;
-  border: none;
-  position: absolute;
-  top: 50%;
-  right: 5px;
-  width: 30px;
-  height: 30px;
-  padding: 0;
-  margin-top: -15px;
-  cursor: pointer;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-
-
-}
-
-
-.it-search__input::-webkit-input-placeholder {
-  color: rgba(159, 163, 176, 1);
-}
-
-.it-search__input::-moz-placeholder {
-  color: rgba(159, 163, 176, 1);
-}
-
-.it-search__input:-ms-input-placeholder {
-  color: rgba(159, 163, 176, 1);
-}
-
-.it-search__input:-moz-placeholder {
-  color: rgba(159, 163, 176, 1);
-}
-
 

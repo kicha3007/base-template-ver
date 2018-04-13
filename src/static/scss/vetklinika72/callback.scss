@@ -8,6 +8,7 @@
 
 
 .it-callback__wrap {
+  padding: 35px 10px;
   overflow: hidden;
   background-color: #EDEDED;
 }
@@ -32,8 +33,6 @@
   box-sizing: content-box;
 }
 
-
-
 .it-callback__input-title {
   font-size: 14px;
   font-weight: 300;
@@ -55,17 +54,33 @@
   -webkit-box-align: start;
   -ms-flex-align: start;
   align-items: flex-start;
-  margin: 0 -10px 0;
+  margin: 0 -5px -25px;
   overflow: hidden;
 }
 
-.it-callback__half {
+.it-callback__input-half {
   flex-grow: 1;
   flex-basis: 180px;
   width: 100%;
-  margin: 0 10px 25px;
-  max-width: 260px;
+  margin: 0 5px 25px;
 }
+
+.it-callback__input {
+  font-size: 14px;
+  padding: 15.5px 20px;
+  color: rgba(0, 0, 0, 0.38);
+  width: 100%;
+  line-height: 1.42;
+  border-radius: 2px;
+  border: none;
+}
+
+.it-callback__input-buttons {
+  width: 100%;
+  flex-grow: 1;
+  flex-basis: 180px;
+}
+
 
 
 .it-callback__input::-webkit-input-placeholder {
@@ -84,34 +99,12 @@
   color: rgba(159, 163, 176, 1);
 }
 
-.it-callback__input {
-  font-size: 14px;
-  padding: 10px 20px;
-  color: rgba(0, 0, 0, 0.38);
-  width: 100%;
-  line-height: 1.42;
-  border-radius: 2px;
-  border: 1px solid rgba(0, 0, 0, 0.2);
-}
-
-.it-callback__buttons {
-  max-width: 100px;
-  width: 100%;
-  margin-top: auto;
-  flex-grow: 1;
-  flex-basis: 100px;
-}
-
-
 
 /******************* checkbox *******************/
 
 
 .it-checkbox-wrap {
   width: 100%;
-  margin-top: 20px;
-  text-align: center;
-
 }
 
 .it-checkbox {
@@ -123,9 +116,8 @@
   align-items: center;
   cursor: pointer;
   text-align: left;
-  max-width: 250px;
-  width: 100%;
   position: relative;
+
 
 }
 
@@ -191,7 +183,7 @@
 
 .it-checkbox__text {
   font-size: 12px;
-  color: rgba(0, 0, 0, 0.38);
+  color: #333333;
   font-weight: 300;
   -ms-flex-preferred-size: 80px;
   flex-basis: 75px;
@@ -234,7 +226,7 @@
   line-height: 1em;
 }
 
-.it-form--hide.success :not(.it-form__success ) {
+.it-form--hide.success:not(.it-form__success ) {
   display: none;
 }
 
@@ -250,97 +242,4 @@
   margin-top: 15px;
 }
 
-.it-steps__checkbox {
-  margin-bottom: 20px;
-}
 
-.it-price-house__input-wrap {
-  margin-bottom: -20px;
-}
-
-
-/******************* it-callback + it-input-file *******************/
-
-.it-callback__file-label {
-  position: relative;
-  width: 100%;
-  display: inline-block;
-}
-
-/*
-.it-callback__file-label:before {
-	content: 'doc, docx, xls, pdf, jpg. Размер не более 10 Mb';
-	display: block;
-	position: absolute;
-	top: 102%;
-	left: 0;
-	width: 100%;
-	height: auto;
-    font-size: 10px;
-  font-weight: 300;
-  color: rgba(0, 0, 0, 0.3);
-  z-index: 20;
-  line-height: 1.2;
-
-
-}
-*/
-
-.it-callback__file {
-  display: none !important;
-}
-
-
-.it-callback__file-name {
-  position: absolute;
-  bottom: -2px;
-  left: 50%;
-  margin-left: -80px;
-  width: 160px;
-  height: 13px;
-  font-size: 9px;
-  color: rgba(51, 51, 51, 0.5);
-  overflow: hidden;
-  border: none;
-  background: transparent;
-  text-align: center;
-}
-
-.it-file__input-wrap {
-  justify-content: flex-start;
-}
-
-.it-callback .it-callback__file-title {
-  padding-top: 11px;
-  padding-bottom: 11px;
-}
-
-.it-callback__half--size {
-  max-width: 178px;
-  flex-basis: 140px;
-}
-
-.it-callback__half--size2 {
-  max-width: 227px;
-  margin-top: 20px;
-}
-
-.it-callback__buttons--size2 {
-  max-width: 130px;
-  margin-top: 20px;
-}
-
-.it-file__callback-half {
-  position: relative;
-}
-
-.it-callback__file-prompt {
-  position: absolute;
-  top: -20px;
-  font-weight: 300;
-  font-size: 10px;
-  color: #333333;
-  opacity: 0.5;
-  width: 100%;
-
-}
