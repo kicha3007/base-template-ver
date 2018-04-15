@@ -31,6 +31,9 @@
 @import "vetklinika72/service";
 @import "vetklinika72/symptoms";
 @import "vetklinika72/callback";
+@import "vetklinika72/about-us";
+@import "vetklinika72/gallery";
+@import "vetklinika72/doctors";
 
 
 
@@ -137,10 +140,6 @@
   overflow: hidden;
 }
 
-
-
-
-
 .it-btn {
   display: inline-block;
   vertical-align: middle;
@@ -158,7 +157,7 @@
   text-transform: none;
   cursor: pointer;
   text-decoration: none;
-  border-radius: 5px;
+  border-radius: 3px;
   position: relative;
 }
 
@@ -177,7 +176,6 @@
   background-color: transparent;
   color: #000000;
   border: 1px solid $main-color;
-
 }
 
 .it-btn--transparent:active,
@@ -224,8 +222,3 @@
 
 }
 
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}

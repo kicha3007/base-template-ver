@@ -3,7 +3,7 @@
 
 /* ------------------- fancybox ------------------- */
 
-$("[data-modal]").fancybox({
+$("[data-fancybox]").fancybox({
     padding: 0,
     helpers: {
         overlay: {
