@@ -14,12 +14,12 @@
 .it-reviews__item {
   @include row-flex();
   justify-content: center;
-  margin-bottom: -40px;
+
   background-color: #ffffff;
 }
 
 .it-reviews__half {
-  margin-bottom: 40px;
+
 }
 
 .it-reviews__half--left {
@@ -37,6 +37,9 @@
   flex-wrap: wrap;
   align-items: center;
   padding: 6.5% 2% 6.5% 0 ;
+  @include phones {
+    padding-left: 5%;
+  }
 }
 
 .it-reviews__date {
@@ -82,11 +85,12 @@
 .it-reviews__img-box {
   max-width: 267px;
   width: 100%;
-  max-height: 267px;
+  max-height: 332px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: flex-start;
+  overflow: hidden;
   @include phones {
       margin: 0 auto;
   }

@@ -7,6 +7,8 @@
   overflow: hidden;
   padding: 6% 0;
   @include row-flex();
+  margin-bottom: -20px;
+
 }
 
 .it-footer__column {
@@ -17,7 +19,10 @@
   flex-wrap: wrap;
   align-items: flex-start;
   flex-direction: column;
+  margin-bottom: 20px;
 }
+
+
 
 .it-footer__column,
 .it-footer__copy,
@@ -71,4 +76,8 @@
 
 .it-developer__img {
   margin: 0 3px 0 15px;
+}
+
+.it-social--indent {
+  margin-bottom: 10px;
 }

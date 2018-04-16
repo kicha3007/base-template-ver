@@ -3,7 +3,8 @@
 @import "../smart-grid";
 
 .it-help__wrap {
-  padding: 0 0 110px;
+  padding: 0 0 10%;
+
 }
 
 .it-help__top {
@@ -11,6 +12,7 @@
   counter-reset: helpCounter;
   margin-bottom: -40px;
   padding-bottom: 13%;
+  justify-content: center;
 }
 
 .it-help__item {
@@ -20,6 +22,10 @@
   position: relative;
   padding-top: 80px;
   margin-bottom: 40px;
+  @include phones {
+    max-width: 200px
+  }
+
 }
 
 .it-help__item:before {
@@ -52,6 +58,9 @@
   width: 66px;
   height: 90px;
   background: url("../img/vetklinika72/help/arrow.png") 51% no-repeat;
+  @include laptop {
+    display: none;
+  }
 }
 
 .it-help__title {
