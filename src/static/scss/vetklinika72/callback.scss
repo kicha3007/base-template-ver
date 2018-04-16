@@ -72,7 +72,7 @@
   width: 100%;
   line-height: 1.42;
   border-radius: 2px;
-  border: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .it-callback__input-buttons {
@@ -80,8 +80,6 @@
   flex-grow: 1;
   flex-basis: 180px;
 }
-
-
 
 .it-callback__input::-webkit-input-placeholder {
   color: rgba(159, 163, 176, 1);
