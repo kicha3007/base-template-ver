@@ -82,7 +82,7 @@
   position: absolute;
   width: 16px;
   height: 23px;
-  top: -2px;
+  top: -4px;
   left: 0;
   background: url("../img/vetklinika72/header/location.png") no-repeat  left center;
 }
@@ -177,9 +177,13 @@ list-style-type: none;
   font-weight: 300;
   text-decoration: none;
   position: relative;
-  padding-left: 35px;
+  padding-left: 25px;
   display: block;
-  margin-bottom: 10px;
+
+}
+
+.it-phone__text {
+  margin-left: 10px;
 }
 
 .it-phone:hover {
@@ -196,7 +200,7 @@ list-style-type: none;
 .it-phone__img-wrap {
   position: absolute;
   top: 0;
-  left: 3px;
+  left: 0;
   width: 20px;
   height: 20px;
   border-radius: 50%;
